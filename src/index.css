@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-display:
+    'Fraunces', Georgia, ui-serif, serif;
+  --font-family-sans:
+    'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: oklch(0.988 0.008 95);
+  --color-foreground: oklch(0.205 0.04 280);
+  --color-card: oklch(1 0 0);
+  --color-muted: oklch(0.94 0.01 95);
+  --color-muted-foreground: oklch(0.5 0.02 270);
+  --color-primary: oklch(0.42 0.12 41);
+  --color-primary-foreground: oklch(0.99 0.01 95);
+  --color-secondary: oklch(0.935 0.02 95);
+  --color-accent: oklch(0.72 0.1 71);
+  --color-border: oklch(0.9 0.01 280);
+  --color-input: oklch(0.9 0.01 280);
+  --color-ring: oklch(0.42 0.12 41);
+  --color-cream: oklch(0.972 0.015 95);
+  --color-leaf: oklch(0.52 0.12 148);
+  --color-espresso: oklch(0.25 0.04 41);
+}
+
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes marquee-x {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+@utility animate-float {
+  animation: float-y 6s ease-in-out infinite;
+}
+
+@utility animate-marquee {
+  animation: marquee-x 40s linear infinite;
+}
+
+*,
+*::before,
+*::after {
+  border-color: var(--color-border);
+}
+
+html {
+  font-family: var(--font-family-sans);
+}
+
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading:
+    var(--font-family-display), Georgia, ui-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light;
+  background: var(--color-background);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #16171d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+}
+
+p {
+  margin: 0;
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+  border-radius: 4px;
+  color: var(--text-h);
+}
