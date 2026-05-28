@@ -1,6 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 import { categories, type Category } from "@/components/site/data";
+import { LeadForm } from "@/components/site/LeadForm";
 import { ArrowLeft, Check } from "lucide-react";
 
 export const Route = createFileRoute("/products/$category")({
@@ -79,6 +80,17 @@ function Category() {
             </Reveal>
           ))}
         </div>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-4 sm:px-6 pb-24">
+        <Reveal>
+          <div className="text-center mb-8">
+            <div className="text-xs uppercase tracking-[0.2em] text-leaf font-medium">Request specs</div>
+            <h2 className="mt-3 font-display text-3xl md:text-4xl">Inquire about {cat.name}</h2>
+            <p className="mt-3 text-muted-foreground">Send a 30-second inquiry — straight to our WhatsApp or email.</p>
+          </div>
+          <LeadForm defaultProduct={cat.name} />
+        </Reveal>
       </section>
     </>
   );

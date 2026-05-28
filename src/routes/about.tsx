@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 import { Target, Eye, Sprout, Handshake } from "lucide-react";
-import logo from "@/assets/logo.png";
+import { LogoMark } from "@/components/site/LogoMark";
+import { WordmarkRibbon } from "@/components/site/WordmarkRibbon";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -37,8 +38,9 @@ function About() {
           </p>
         </Reveal>
         <Reveal delay={0.15} className="lg:col-span-5">
-          <div className="aspect-square rounded-3xl bg-gradient-to-br from-leaf/20 via-accent/20 to-primary/10 flex items-center justify-center border border-border">
-            <img src={logo} alt="Kibrom logo" className="h-1/2 w-auto animate-float" />
+          <div className="flex aspect-square flex-col items-center justify-center gap-6 rounded-3xl border border-border bg-gradient-to-br from-leaf/20 via-accent/20 to-primary/10 p-10">
+            <LogoMark className="h-auto w-[min(50%,200px)] animate-float drop-shadow-lg" />
+            <WordmarkRibbon className="w-full max-w-[260px]" />
           </div>
         </Reveal>
       </section>
