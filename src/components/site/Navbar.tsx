@@ -30,7 +30,7 @@ export function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "backdrop-blur-md bg-background/90 shadow-[0_6px_24px_-12px_rgba(0,0,0,0.18)]"
+          ? "backdrop-blur-md bg-background shadow-[0_6px_24px_-12px_rgba(0,0,0,0.18)]"
           : "bg-transparent"
       }`}
     >
@@ -42,7 +42,8 @@ export function Navbar() {
             <div className="text-[9px] sm:text-[10px] uppercase tracking-[0.18em] text-gray-400">Since 2009 G.C</div>
           </div>
         </Link>
-        <nav className="hidden lg:flex items-center gap-7 lg:gap-9 text-gray-300">
+        <nav className={`hidden lg:flex items-center gap-7 lg:gap-9 text-gray-300 ${
+          scrolled ? "text-gray-600" : "text-gray-300"}`}>
           {links.map((l) => (
             <Link
               key={l.to}
