@@ -17,7 +17,7 @@ export function whatsappHref(message = PRESET_INQUIRY): string {
 }
 
 export function mailtoInquiryHref(
-  subject = 'Export inquiry — Kibrom Agro-Export',
+  subject = 'Export inquiry — Kibrom Niguse Agro-Export',
   body = PRESET_INQUIRY,
 ): string {
   return `mailto:${COMPANY.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`

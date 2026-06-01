@@ -25,8 +25,8 @@ function Contact() {
     { icon: Mail, label: "Email", value: CONTACT.email, href: `mailto:${CONTACT.email}` },
     { icon: MessageCircle, label: "WhatsApp", value: "+251 911 06 9271", href: `https://wa.me/${CONTACT.whatsapp}` },
     { icon: Globe, label: "Website", value: "www.kibromexim.com", href: "https://www.kibromexim.com" },
-    { icon: AtSign, label: "Social", value: "@kbagro8", href: "https://instagram.com/kbagro8" },
-    { icon: MapPin, label: "Office", value: "Abdisa Aga Bldg., Office No. 03, Addis Ababa, Ethiopia" },
+    { icon: AtSign, label: "Social", value: "@Kibrom_niguse", href: "https://instagram.com/Kibrom_niguse" },
+    { icon: MapPin, label: "Office", value: "Piaza, Atkilt Tera Bldg, 2nd floor, Addis Ababa, Ethiopia" },
   ];
 
   return (

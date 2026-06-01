@@ -13,7 +13,7 @@ export function StructuredDataOrganization() {
     foundingDate: String(COMPANY.foundingYear),
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Abdisa Aga Building, Office No. 03',
+      streetAddress: 'Piaza, Atkilt Tera Bldg, 2nd floor',
       addressLocality: 'Addis Ababa',
       addressCountry: 'ET',
     },

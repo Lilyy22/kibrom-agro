@@ -12,14 +12,14 @@ export function Footer() {
         style={{ backgroundImage: `url(${bg})` }}
         aria-hidden="true"
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-espresso/40 via-primary/60 to-espresso/95" aria-hidden="true" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-espresso/50 via-primary/70 to-espresso/95" aria-hidden="true" />
 
       <div className="mx-auto max-w-7xl px-6 pt-20 pb-10">
         {/* CTA strip */}
         <div className="rounded-3xl border border-cream/15 bg-cream/[0.06] backdrop-blur-sm p-8 md:p-10 flex flex-col md:flex-row gap-6 md:items-center md:justify-between">
           <div>
             <h3 className="font-display text-2xl md:text-3xl">Ready to import from Ethiopia?</h3>
-            <p className="mt-2 text-sm opacity-80 max-w-md">Get specs, samples and a fair FOB / CIF quote within one business day.</p>
+            <p className="mt-2 text-sm opacity-80 max-w-md">Get specs, samples and a fair FOB / CFR quote within one business day.</p>
           </div>
           <Link to="/contact" className="inline-flex items-center gap-2 rounded-full bg-cream text-espresso px-6 py-3 text-sm font-semibold hover:scale-105 transition-transform self-start md:self-auto">
             Request a quote <ArrowRight className="h-4 w-4" />
@@ -31,11 +31,11 @@ export function Footer() {
             <div className="flex items-center gap-3">
               <img src={logo} alt="" className="h-12 w-auto bg-cream rounded-xl p-1.5" />
               <div>
-                <div className="font-display text-xl">Kibrom Niguse</div>
+                <div className="font-display text-xl whitespace-nowrap tracking-tighter">Kibrom Niguse Agro Export</div>
                 <div className="text-[10px] uppercase tracking-[0.2em] opacity-70">Agro-Export Agent</div>
               </div>
             </div>
-            <p className="mt-5 max-w-md text-sm opacity-80 leading-relaxed">
+            <p className="mt-5 max-w-md text-sm leading-relaxed">
               Ethiopian premium agricultural exports — oil seeds, Arabica coffee, pulses and spices.
               Trusted by buyers across the UK, Italy, China, Germany, Russia, Indonesia, Dubai and India.
             </p>
@@ -60,7 +60,7 @@ export function Footer() {
               <li><a href="mailto:info@kibromexim.com" className="flex gap-2 hover:text-accent"><Mail className="h-4 w-4 mt-0.5" /> info@kibromexim.com</a></li>
               <li><a href="https://www.kibromexim.com" className="flex gap-2 hover:text-accent"><Globe className="h-4 w-4 mt-0.5" /> www.kibromexim.com</a></li>
               {/* <li><a href="https://instagram.com/kbagro8" className="flex gap-2 hover:text-accent"><Instagram className="h-4 w-4 mt-0.5" /> @kbagro8</a></li> */}
-              <li className="flex gap-2"><MapPin className="h-4 w-4 mt-0.5" /> Abdisa Aga Bldg., Office 03, Addis Ababa</li>
+              <li className="flex gap-2"><MapPin className="h-4 w-4 mt-0.5" />Piaza, Atkilt Tera Bldg, 2nd floor, Addis Ababa , Ethiopia</li>
             </ul>
           </div>
         </div>

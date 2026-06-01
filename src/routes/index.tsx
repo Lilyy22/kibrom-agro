@@ -35,7 +35,7 @@ export const Route = createFileRoute("/")({
         url: "/",
         logo: "/favicon.ico",
         foundingDate: "2009",
-        address: { "@type": "PostalAddress", streetAddress: "Abdisa Aga Bldg., Office 03", addressLocality: "Addis Ababa", addressCountry: "ET" },
+        address: { "@type": "PostalAddress", streetAddress: "Piaza, Atkilt Tera Bldg, 2nd floor", addressLocality: "Addis Ababa", addressCountry: "ET" },
         contactPoint: [{ "@type": "ContactPoint", telephone: "+251-911-06-9271", contactType: "sales", email: "info@kibromexim.com", areaServed: ["UK","IT","CN","DE","RU","ID","AE","IN"] }],
       }),
     }],
@@ -83,7 +83,7 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.1 }}
             className="mt-5 font-display text-4xl sm:text-6xl md:text-7xl leading-[1.02]"
           >
-            Ethiopia's finest, <span className="italic text-accent">delivered</span> to the world.
+            Ethiopia's finest agricultural products, <span className="italic text-orange-300">delivered</span> to the world.
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.25 }}
@@ -134,11 +134,11 @@ function QuoteBand() {
             <div className="lg:col-span-2 bg-primary text-primary-foreground p-8 md:p-10">
               <div className="text-xs uppercase tracking-[0.2em] text-accent">Request a Quote</div>
               <h2 className="mt-3 font-display text-3xl md:text-4xl">Quotes in 1 business day.</h2>
-              <p className="mt-4 text-sm opacity-85">Tell us product, volume, port and timeline. We'll come back with full specs, samples on request, and a fair FOB / CIF quote.</p>
+              <p className="mt-4 text-sm opacity-85">Tell us product, volume, port and timeline. We'll come back with full specs, samples on request, and a fair FOB / CFR quote.</p>
               <ul className="mt-6 space-y-2 text-sm opacity-90">
-                <li>· Direct from origin (Addis Ababa)</li>
+                <li>· Direct from origin (Ethiopia)</li>
                 <li>· Incoterm 2020 &amp; UCP600</li>
-                <li>· Sortex-cleaned, HPS, fumigated</li>
+                <li>· Machine or HPS(Hand-Picked Sortex) cleaned, Fumigated</li>
               </ul>
             </div>
             <div className="lg:col-span-3 p-6 md:p-8 bg-background">
@@ -154,8 +154,8 @@ function QuoteBand() {
 function Stats() {
   const items = [
     { value: "15+", label: "Years exporting" },
-    { value: "9+", label: "Countries served" },
-    { value: "20+", label: "Product varieties" },
+    { value: "37+", label: "Countries served" },
+    { value: "29+", label: "Product varieties" },
     { value: "100%", label: "Reliability promise" },
   ];
   return (
@@ -204,11 +204,11 @@ function Categories() {
                 className="absolute inset-0 z-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               />
               <div
-                className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-espresso/95 via-espresso/35 to-espresso/10"
+                className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-espresso/95 via-espresso/85 to-espresso/10"
                 aria-hidden
               />
               <div className="relative z-10 mt-auto w-full p-6 text-cream sm:p-8">
-                <div className="text-xs uppercase tracking-widest opacity-75">
+                <div className="text-xs uppercase tracking-widest opacity-85">
                   Category 0{i + 1}
                 </div>
                 <h3 className="mt-1 font-display text-2xl sm:text-3xl md:text-4xl">{c.name}</h3>
@@ -230,7 +230,7 @@ function Values() {
   const values = [
     { icon: ShieldCheck, title: "100% Reliable", text: "Transparent dealings, on-time shipments, every contract honoured." },
     { icon: Award, title: "Verified Quality", text: "Sortex-cleaned, HPS, fumigated — inspected by our team at the warehouse." },
-    { icon: Globe2, title: "Global Logistics", text: "Incoterm 2020 & UCP600. We handle docs end-to-end so you don't have to." },
+    { icon: Globe2, title: "Global Logistics", text: "We handle docs end-to-end so you don't have to." },
   ];
   return (
     <section className="bg-secondary/40">
@@ -252,13 +252,13 @@ function Values() {
 }
 
 function Reach() {
-  const clientLogos = ["Sinopharm Fortune Way", "Citexic Corporation", "Highland Roasters", "Mediterranean Pulses Co.", "Levant Spice Trading", "Pacific Bean Importers"];
+  const clientLogos = ["Sinopharm Fortune Way", "China Citexic Corporation", "Pedon S.P.A", "Qingdao Accname International trading Co.,Ltd"];
   return (
     <section className="mx-auto max-w-7xl px-4 sm:px-6 py-20 md:py-24">
       <Reveal>
         <div className="text-center max-w-2xl mx-auto">
           <div className="text-xs uppercase tracking-[0.2em] text-leaf font-medium">Trusted globally</div>
-          <h2 className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl">From Ethiopian highlands to nine countries.</h2>
+          <h2 className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl">From Ethiopian highlands to twenty nine countries.</h2>
         </div>
       </Reveal>
       <div className="mt-10 overflow-hidden">

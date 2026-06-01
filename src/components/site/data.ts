@@ -188,7 +188,7 @@ export const categories: Category[] = [
       'Spices ship double-sealed following sieving, polishing and microbial screening aligned with importer checklists.',
     items: [
       {
-        name: 'Turmeric (Whole Finger)',
+        name: 'Turmeric (Finger & Bulb)',
         description:
           'Vibrant curcumin-forward turmeric kept whole to prolong volatile oil retention until grinding at destination.',
         specs: ['Double polished', 'Moisture 12% max', 'Volatile oil certificate on demand'],

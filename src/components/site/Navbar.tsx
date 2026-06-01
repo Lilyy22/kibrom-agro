@@ -36,9 +36,9 @@ export function Navbar() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 h-16 sm:h-18 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 sm:gap-3 group">
-          <img src={logo} alt="Kibrom Agro-Export logo" className="h-9 sm:h-11 w-auto transition-transform group-hover:rotate-[-6deg]" />
+          <img src={logo} alt="Kibrom Agro-Export logo" className="h-6 sm:h-9 w-auto transition-transform group-hover:rotate-[-6deg]" />
           <div className="leading-tight">
-            <div className="font-display text-base sm:text-lg font-semibold text-green-500">Kibrom Agro</div>
+            <div className="font-display text-base tracking-tighter sm:text-lg whitespace-nowrap font-semibold text-green-500">Kibrom Niguse Agro Export</div>
             <div className="text-[9px] sm:text-[10px] uppercase tracking-[0.18em] text-gray-400">Since 2009 G.C</div>
           </div>
         </Link>

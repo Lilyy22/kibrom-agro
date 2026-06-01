@@ -20,9 +20,9 @@ export const COMPANY = {
   whatsappDigits: '251911069271',
   website: 'https://www.kibromexim.com',
   address:
-    'Abdisa Aga Building, Office No. 03, Addis Ababa, Ethiopia',
-  instagramHandle: '@kbagro8',
-  instagramUrl: 'https://www.instagram.com/kbagro8',
+    'Piaza, Atkilt Tera Bldg, 2nd floor, Addis Ababa, Ethiopia',
+  instagramHandle: '@Kibrom_niguse',
+  instagramUrl: 'https://www.instagram.com/Kibrom_niguse',
 } as const
 
 export function absoluteUrl(pathOrUrl: string): string {
